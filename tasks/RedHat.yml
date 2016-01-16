@@ -1,0 +1,8 @@
+---
+# Install docker RedHat
+
+- name: Setup yum repo
+  template: src=docker.repo dest=/etc/yum.repos.d/docker.repo
+
+- name: Install Docker (RedHat)
+  yum: name=docker-engine state=latest
