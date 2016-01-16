@@ -8,6 +8,20 @@ Requirements
 
 Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
 
+Install
+------------
+*Create requirements.yml and add:
+```
+# docker role
+- src: https://github.com/Atigeo/ansible-docker.git
+  version: master
+  name: docker
+```
+
+```
+ansible-galaxy install -r requirements.yml
+```
+
 Role Variables
 --------------
 
