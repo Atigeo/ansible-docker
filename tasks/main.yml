@@ -6,3 +6,10 @@
 
 - include: RedHat.yml
   when: ansible_os_family == "RedHat"
+
+- name: Install Docker-py
+  pip: name=docker-py version=1.5.0
+
+- name: add user to group
+  user: name={{ user }} append=yes groups=docker
+  ignore_errors: yes
