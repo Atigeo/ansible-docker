@@ -9,4 +9,4 @@
 
 - name: add user to group
   user: name={{ user }} append=yes groups=docker
-  ignore_errors: yes
+  when: user
