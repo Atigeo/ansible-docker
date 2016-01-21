@@ -9,4 +9,4 @@
 
 - name: add user to group
   user: name={{ user }} append=yes groups=docker
-  when: user
+  when: user is defined
