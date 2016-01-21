@@ -9,3 +9,4 @@
 
 - name: Install docker
   apt: name=docker-engine update_cache=yes state=latest
+  notify: Restart docker

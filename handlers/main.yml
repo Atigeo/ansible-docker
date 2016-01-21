@@ -2,4 +2,4 @@
 # handlers file for docker
 
 - name: Restart docker
-  service: name=docker state=started
+  service: name=docker state=started enabled=yes
